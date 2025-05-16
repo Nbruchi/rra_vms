@@ -1,59 +1,59 @@
-# RRA Vehicle Management System (RRA-VMS)
+# 🚗 RRA Vehicle Management System (RRA-VMS)
 
 A comprehensive API for managing vehicle registration, ownership, and transfers for the Rwanda Revenue Authority (RRA).
 
-## Table of Contents
-- [Overview](#overview)
-- [Features](#features)
-- [Technologies Used](#technologies-used)
-- [Getting Started](#getting-started)
-  - [Prerequisites](#prerequisites)
-  - [Installation](#installation)
-  - [Configuration](#configuration)
-- [API Documentation](#api-documentation)
-- [API Endpoints](#api-endpoints)
-  - [Authentication](#authentication)
-  - [Vehicle Management](#vehicle-management)
-  - [Owner Management](#owner-management)
-- [Security](#security)
-- [License](#license)
-- [Contact](#contact)
+## 📑 Table of Contents
+- [📋 Overview](#overview)
+- [✨ Features](#features)
+- [🛠️ Technologies Used](#technologies-used)
+- [🚀 Getting Started](#getting-started)
+  - [📋 Prerequisites](#prerequisites)
+  - [⚙️ Installation](#installation)
+  - [🔧 Configuration](#configuration)
+- [📚 API Documentation](#api-documentation)
+- [🔌 API Endpoints](#api-endpoints)
+  - [🔐 Authentication](#authentication)
+  - [🚙 Vehicle Management](#vehicle-management)
+  - [👤 Owner Management](#owner-management)
+- [🔒 Security](#security)
+- [📄 License](#license)
+- [📧 Contact](#contact)
 
-## Overview
+## 📋 Overview
 
 The RRA Vehicle Management System is a Spring Boot application designed to manage vehicle registration, ownership, and transfers. It provides a secure API for administrators to register vehicles, manage owners, and track vehicle ownership history.
 
-## Features
+## ✨ Features
 
-- User authentication and authorization with JWT
-- Vehicle registration and management
-- Vehicle owner management
-- Vehicle ownership transfer
-- Vehicle ownership history tracking
-- Plate number registration and management
-- Search functionality for vehicles and owners
+- 🔐 User authentication and authorization with JWT
+- 🚗 Vehicle registration and management
+- 👤 Vehicle owner management
+- 🔄 Vehicle ownership transfer
+- 📜 Vehicle ownership history tracking
+- 🔢 Plate number registration and management
+- 🔍 Search functionality for vehicles and owners
 
-## Technologies Used
+## 🛠️ Technologies Used
 
-- Java 21
-- Spring Boot 3.4.5
-- Spring Security with JWT Authentication
-- Spring Data JPA
-- PostgreSQL Database
-- Swagger/OpenAPI for API Documentation
-- Maven for dependency management
-- Lombok for reducing boilerplate code
-- ModelMapper for object mapping
+- ☕ Java 21
+- 🍃 Spring Boot 3.4.5
+- 🔐 Spring Security with JWT Authentication
+- 🗄️ Spring Data JPA
+- 🐘 PostgreSQL Database
+- 📝 Swagger/OpenAPI for API Documentation
+- 🔧 Maven for dependency management
+- 🧰 Lombok for reducing boilerplate code
+- 🔄 ModelMapper for object mapping
 
-## Getting Started
+## 🚀 Getting Started
 
-### Prerequisites
+### 📋 Prerequisites
 
-- Java 21 or higher
-- PostgreSQL 12 or higher
-- Maven 3.6 or higher
+- ☕ Java 21 or higher
+- 🐘 PostgreSQL 12 or higher
+- 🔧 Maven 3.6 or higher
 
-### Installation
+### ⚙️ Installation
 
 1. Clone the repository:
    ```bash
@@ -71,7 +71,7 @@ The RRA Vehicle Management System is a Spring Boot application designed to manag
    mvn spring-boot:run
    ```
 
-### Configuration
+### 🔧 Configuration
 
 The application can be configured through the `application.properties` file:
 
@@ -86,7 +86,7 @@ jwt.secret.key=your_secret_key
 jwt.expiration=36000000
 ```
 
-## API Documentation
+## 📚 API Documentation
 
 Once the application is running, you can access the Swagger UI documentation at:
 
@@ -94,15 +94,15 @@ Once the application is running, you can access the Swagger UI documentation at:
 http://localhost:8080/swagger-ui.html
 ```
 
-## API Endpoints
+## 🔌 API Endpoints
 
-### Authentication
+### 🔐 Authentication
 
 - `POST /api/auth/register` - Register a new user
 - `POST /api/auth/login` - Authenticate a user and get JWT token
 - `GET /api/auth/users` - Get all users (admin only)
 
-### Vehicle Management
+### 🚙 Vehicle Management
 
 - `POST /api/vehicles` - Register a new vehicle
 - `GET /api/vehicles` - Get all vehicles with pagination
@@ -111,7 +111,7 @@ http://localhost:8080/swagger-ui.html
 - `POST /api/vehicles/transfer` - Transfer vehicle ownership
 - `GET /api/vehicles/history/{identifier}` - Get vehicle ownership history
 
-### Owner Management
+### 👤 Owner Management
 
 - `POST /api/owners` - Create a new owner
 - `GET /api/owners/` - Get owners with vehicles
@@ -119,16 +119,16 @@ http://localhost:8080/swagger-ui.html
 - `GET /api/owners/{ownerId}/plates` - Get owner's plate numbers
 - `POST /api/owners/plates` - Register a plate number
 
-## Security
+## 🔒 Security
 
 The application uses JWT (JSON Web Token) for authentication and authorization. All API endpoints, except for registration and login, require authentication. Most endpoints require ADMIN role access.
 
-## License
+## 📄 License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
 
-## Contact
+## 📧 Contact
 
-Bruce NKUNDABAGENZI - brucenkundabagenzi@gmail.com
+👨‍💻 Bruce NKUNDABAGENZI - brucenkundabagenzi@gmail.com
 
-Project Link: [https://github.com/yourusername/rra_vms](https://github.com/yourusername/rra_vms)
+🔗 Project Link: [https://github.com/yourusername/rra_vms](https://github.com/yourusername/rra_vms)
